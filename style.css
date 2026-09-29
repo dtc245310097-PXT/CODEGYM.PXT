@@ -1,0 +1,41 @@
+/* --- Reset cơ bản --- */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* --- Tuyệt chiêu căn giữa với Flexbox (Đúng 3-4 dòng cốt lõi) --- */
+.container {
+  height: 100vh;             /* Chiều cao chiếm trọn khung nhìn màn hình */
+  display: flex;             /* 1. Kích hoạt mô hình Flexbox cho phần tử cha */
+  justify-content: center;   /* 2. Căn giữa theo chiều ngang (trục chính) */
+  align-items: center;       /* 3. Căn giữa theo chiều dọc (trục phụ) */
+}
+
+/* --- Trang trí thêm cho phần tử con để dễ quan sát --- */
+.box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+}
+
+.box h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.box p {
+  color: #7f8c8d;
+  margin-bottom: 0;
+}
